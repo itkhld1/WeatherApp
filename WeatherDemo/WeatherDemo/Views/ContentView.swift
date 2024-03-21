@@ -1,0 +1,38 @@
+//
+//  ContentView.swift
+//  WeatherDemo
+//
+//  Created by Itkhld on 21.03.2024.
+//
+
+import SwiftUI
+
+struct ContentView: View {
+    @StateObject var locationManager = LocationManager()
+    
+    var body: some View {
+        VStack{
+            
+            if let location = locationManager.location{
+                Text("Your coordinates are: \(location.latitude), \(location.longitude)")
+            } else {
+                if locationManager.isLoading{
+                    ProgressView()
+                } else {
+                    WelcomeView()
+                        .environmentObject(locationManager)
+                }
+            }
+            WelcomeView()
+                .environmentObject(locationManager)
+        }
+        .background(Color(hue: 0.587, saturation: 0.78, brightness: 0.377))
+        .preferredColorScheme(.dark)
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
