@@ -44,7 +44,7 @@ struct WeatherView: View {
                     Spacer()
                         .frame(height: 80)
                     
-                    AsyncImage(url: URL(string: "https://pixabay.com/vectors/landscape-twilight-light-night-1844226/")){
+                    AsyncImage(url: URL(string: "https://www.pexels.com/photo/view-of-cityscape-325185/")){
                         image in image
                             .resizable()
                             .aspectRatio(contentMode: .fit)

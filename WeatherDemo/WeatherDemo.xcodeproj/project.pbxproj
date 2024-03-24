@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA78E13C2BB04A4600549368 /* WeatherRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA78E13B2BB04A4600549368 /* WeatherRow.swift */; };
 		FAAFD09B2BAC71F70041B468 /* WeatherDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFD09A2BAC71F70041B468 /* WeatherDemoApp.swift */; };
 		FAAFD09D2BAC71F70041B468 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAFD09C2BAC71F70041B468 /* ContentView.swift */; };
 		FAAFD09F2BAC71FA0041B468 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAAFD09E2BAC71FA0041B468 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA78E13B2BB04A4600549368 /* WeatherRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRow.swift; sourceTree = "<group>"; };
 		FAAFD0972BAC71F70041B468 /* WeatherDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAFD09A2BAC71F70041B468 /* WeatherDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDemoApp.swift; sourceTree = "<group>"; };
 		FAAFD09C2BAC71F70041B468 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,9 +50,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA78E13A2BB04A2200549368 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FA78E13B2BB04A4600549368 /* WeatherRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		FAAFD08E2BAC71F70041B468 = {
 			isa = PBXGroup;
 			children = (
+				FA78E13A2BB04A2200549368 /* Components */,
 				FAAFD0992BAC71F70041B468 /* WeatherDemo */,
 				FAAFD0B82BADF7030041B468 /* Extensions.swift */,
 				FAAFD0982BAC71F70041B468 /* Products */,
@@ -183,6 +194,7 @@
 				FAAFD09D2BAC71F70041B468 /* ContentView.swift in Sources */,
 				FAAFD09B2BAC71F70041B468 /* WeatherDemoApp.swift in Sources */,
 				FAAFD0AA2BAC73C00041B468 /* LocationManager.swift in Sources */,
+				FA78E13C2BB04A4600549368 /* WeatherRow.swift in Sources */,
 				FAAFD0AF2BAC7B750041B468 /* LoadingView.swift in Sources */,
 				FAAFD0B52BADF2120041B468 /* ModelData.swift in Sources */,
 				FAAFD0B32BADF16F0041B468 /* WeatherView.swift in Sources */,
